@@ -1,0 +1,6 @@
+selenium
+PyYAML
+pika
+nose
+psutil
+pymysql

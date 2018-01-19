@@ -1,0 +1,16 @@
+{
+    "name": "测试平台",
+    "type": "page",
+    "children": [
+        {
+            "name": "登录页面",
+            "type": "page",
+            "children": [
+                {
+                    "name": "用户名",
+                    "xpath": "//input[@id='loginUser']"
+                }
+            ]
+        }
+    ]
+}

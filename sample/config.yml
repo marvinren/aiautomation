@@ -1,0 +1,22 @@
+aiautomation:
+  browser:
+    implicitly_wait: 7 #隐式等待时间，单位:秒
+    page_load_timeout: 10 #页面等待的超市时间, 单位：秒
+  testcase:
+    logger: SimpleLog
+  runner:
+    case_resume_close_browser: never #each 每个案例执行完毕都关闭浏览器 never 从来不关闭
+    case_error: stop
+    case_error_retry: 0
+  agent:
+    agent_id: 1000
+    report_delay: 10
+    mq_host: 10.12.1.21
+    mq_port: 5672
+    mq_user: admin
+    mq_pwd: 123456
+
+    db_host: 10.12.1.23
+    db_port: 3306
+    db_user: root
+    db_pwd: Yijiceshi4!

@@ -9,8 +9,12 @@ setup(name='aiautomation',
       author='Marvin Ren',
       author_email='dtrex@163.com',
       description='The Automation Test Framework',
-      packages=find_packages(exclude=['tests']),
-      long_description=codecs.open('README.md', 'r', 'utf-8').read(),
+      packages=find_packages(exclude=['tests', 'logs', 'sample']),
+      long_description=open('README.md', 'r', 'utf-8').read(),
       zip_safe=False,
-      setup_requires=['nose>=1.0', 'selenium>=3.8.1'],
+      # setup_requires=[
+      #     'nose>=1.0',
+      #     'selenium>=3.8.1',
+      #     'PyYAML>=3.12'
+      # ],
       test_suite='nose.collector')

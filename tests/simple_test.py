@@ -1,7 +1,7 @@
-def Testfunc():
-    a = 1
-    b = 2
-    assert a != b
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
-def TestSuccess():
-    assert 1 == 1
+from aiautomation.runner import *
+
+if __name__=="__main__":
+    run()
