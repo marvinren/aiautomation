@@ -1,14 +1,18 @@
 import time
 from selenium import webdriver
+from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
+from selenium.webdriver.support.wait import WebDriverWait
+
+from aiautomation.testcase.decorator import step_log
 from aiautomation.testcase.element import Element
 from aiautomation.log.abstract_log import AbstractLog
 from aiautomation.log.simple_log import SimpleLog
 
 
-class Browser(RemoteWebDriver):
+class Browser:
     """
-    该类为webdriver的委托类
+    该类为webdriver（RemoteWebDriver）的委托类
     """
 
     def __init__(self, logger=None, config=None, browser_type="chrome", *key, **kwargs):
@@ -25,7 +29,7 @@ class Browser(RemoteWebDriver):
         self.config = config
 
         if browser_type == "ie":
-            self.webdriver = webdriver.Ie(*key, **kwargs)
+            self.webdriver = webdriver.Ie(capabilities={'ignoreZoomSetting': True})
         elif browser_type == "chrome":
             self.webdriver = webdriver.Chrome(*key, **kwargs)
         elif browser_type == "firefox":
@@ -37,13 +41,13 @@ class Browser(RemoteWebDriver):
 
         # 隐式等待时间设置
         try:
-            config_implictly_wait = self.config.getConfig().aiautomation.browser.implicitly_wait
+            config_implictly_wait = self.config.aiautomation.browser.implicitly_wait
             self.webdriver.implicitly_wait(config_implictly_wait)
         except Exception as e:
             self.webdriver.implicitly_wait(3)
             self.logger.warn("未配置aiautomation.browser.implicitly_wait，将使用默认值3s")
         try:
-            config_page_load_timeout = self.config.getConfig().aiautomation.browser.page_load_timeout
+            config_page_load_timeout = self.config.aiautomation.browser.page_load_timeout
             self.webdriver.set_page_load_timeout(config_page_load_timeout)
         except:
             self.webdriver.set_page_load_timeout(7)
@@ -58,49 +62,84 @@ class Browser(RemoteWebDriver):
             return False
         return True
 
-    def find_element(self, by, value):
-        ret = self.webdriver.find_element(by, value)
-        element_delegate = Element(ret, self.logger, "%s:%s" % (by, value))
-        case_info = self.logger.testcase
-        self.logger.element_log(case_info.case_id, case_info.case_exec_id, case_info.node_id, "%s:%s" % (by, value),
-                                "查找控件find_element")
+    @step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
+    def find_element_by_locate(self, locate):
+        return self.find_element(locate[0], locate[1])
 
-        return element_delegate
-
-    def find_elements(self, by, value):
-        rets = self.webdriver.find_elements(by, value)
-        element_delegates = list(map(lambda x: Element(x, self.logger, "%s:%s" % (by, value)), rets))
-        case_info = self.logger.testcase
-        self.logger.element_log(case_info.case_id, case_info.case_exec_id, case_info.node_id, "%s:%s" % (by, value),
-                                "查找多个控件find_elements")
-        return element_delegates
-
-    def get(self, url):
-        self.webdriver.get(url)
-        case_info = self.logger.testcase
-        self.logger.element_log(case_info.case_id, case_info.case_exec_id, case_info.node_id, "浏览器",
-                                "浏览器跳转url：%s" % url)
-
+    #@step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
     def switch_to_frame(self, frame_ref):
-        self.webdriver.switch_to_frame(frame_ref)
-        case_info = self.logger.testcase
-        self.logger.element_log(case_info.case_id, case_info.case_exec_id, case_info.node_id, "Frame",
-                                "Frame跳转：%s" % frame_ref.name)
+        ref = frame_ref
+        if isinstance(ref, Element):
+            ref = ref.web_element
+        self.webdriver.switch_to.frame(ref)
 
-    def switch_to_default_content(self):
-        self.webdriver.switch_to_default_content()
-        case_info = self.logger.testcase
-        self.logger.element_log(case_info.case_id, case_info.case_exec_id, case_info.node_id, "Frame",
-                                "Frame跳转到默认")
+    @property
+    def windows_handles(self):
+        return self.webdriver.window_handles
+
+    @property
+    def current_window_handle(self):
+        return self.webdriver.current_window_handle
+
+    def switch_to_windows_by_name(self, name):
+        '''
+        吐槽，简直就是狗屎方法，很不好用，一般人都不起名字
+        :param name:
+        :return:
+        '''
+        self.webdriver.switch_to.window(name)
+
+    def switch_to_windows_by_url(self, contains_text):
+        for window_id in self.webdriver.window_handles:
+            self.webdriver.switch_to.window(window_id)
+            url = self.webdriver.current_url
+            if url.find(contains_text) >= 0:
+                return
+        raise ValueError("未找到适合的window")
+
+    def get_waiter(self, timeout = 7):
+        return WebDriverWait(self.webdriver, timeout)
+
+    # @step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
+    # def find_element(self, by, value):
+    #     ret = self.webdriver.find_element(by, value)
+    #     element_delegate = Element(ret, self.logger, "%s:%s" % (by, value))
+    #     return element_delegate
+    #
+    # @step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
+    # def find_elements(self, by, value):
+    #     rets = self.webdriver.find_elements(by, value)
+    #     element_delegates = list(map(lambda x: Element(x, self.logger, "%s:%s" % (by, value)), rets))
+    #     return element_delegates
+
+    @step_log(AbstractLog.STEP_TYPE_CHECK, __name__)
+    def assert_check_point(self, check_point_name, expect_value, real_value, check_func):
+        return check_func(expect_value, real_value)
+
+    @step_log(AbstractLog.STEP_TYPE_CHECK, __name__)
+    def assert_check_point_same(self, check_point_name, expect_value, real_value):
+        return self.assert_check_point(check_point_name, expect_value, real_value, lambda x, y: x==y)
+
+    @step_log(AbstractLog.STEP_TYPE_CHECK, __name__)
+    def assert_check_point_true(self, check_point_name, result):
+        return self.assert_check_point_same(check_point_name, True, result)
 
     def __getattr__(self, name):
         if hasattr(self.webdriver, name):
-            return getattr(self.webdriver, name)
-        #
-        # def _missing(*args, **kwargs):
-        #     print("A missing method was called.")
-        #     print("The object was %r, the method was %r. " % (self, name))
-        #     print("It was called with %r and %r as arguments" % (args, kwargs))
-        #     raise ValueError("the missing method has been called.")
-        #
-        # return _missing
+            #如果是查询多个元素要进行封装
+            if name.startswith('find_elements'):
+                def func(*key, **kwargs):
+                    rets = getattr(self.webdriver, name)(*key, **kwargs)
+                    element_delegates = list(map(lambda x: Element(x, self.logger, "%s" % str(key)), rets))
+                    return element_delegates
+                return func
+
+            #如果是查询元素，要进行封装
+            if name.startswith("find_element"):
+                def func(*key, **kwargs):
+                    ret = getattr(self.webdriver, name)(*key, **kwargs)
+                    element_delegate = Element(ret, self.logger, "%s" % str(key))
+                    return element_delegate
+                return func
+
+            return step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__, self.logger)(getattr(self.webdriver, name))

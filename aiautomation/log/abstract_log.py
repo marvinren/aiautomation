@@ -3,6 +3,8 @@
 
 import abc
 
+from aiautomation.testcase.test_case_module import CaseInfo
+from aiautomation.testcase.test_plan import PlanInfo
 from aiautomation.utils.log import get_logger
 
 
@@ -14,13 +16,17 @@ class AbstractLog:
 
     STEP_TYPE_STEP = "STEP"
     STEP_TYPE_COMPONENT = "COMPONENT"
-    STEP_TYPE_DATA = "DATA"
     STEP_TYPE_ELEMENT = "ELEMENT"
-    STEP_TYPE_OTHER = "OTHER"
+    STEP_TYPE_CHECK = "CHECK"
 
-    def __init__(self):
-        self._exec_plan = None
+    START_STATUS = 0
+    SUCCESS_STATUS = 10
+    ERROR_STATUS = 11
+
+    def __init__(self, config=None):
+        self._test_plan = None
         self._test_case = None
+        self._config = config
         self.log = get_logger(__name__)
 
     @property
@@ -29,17 +35,21 @@ class AbstractLog:
 
     @testcase.setter
     def testcase(self, value):
+        if value is not None and not isinstance(value, CaseInfo):
+            raise ValueError("%s日志类的计划属性，需要是CaseInfo类型" % __name__)
         self._test_case = value
 
     @property
-    def execplan(self):
-        return self._exec_plan
+    def testplan(self):
+        return self._test_plan
 
-    @execplan.setter
-    def execplan(self, value):
-        self._exec_plan = value
+    @testplan.setter
+    def testplan(self, value):
+        if value is not None and not isinstance(value, PlanInfo):
+            raise ValueError("%s日志类的计划属性，需要是TestPlan类型" % __name__)
+        self._test_plan = value
 
-    def get_logger(self, name):
+    def get_logger(self, name: object) -> object:
         self.log = get_logger(name)
         return self.log
 
@@ -56,74 +66,25 @@ class AbstractLog:
         self.log.error(msg)
 
     @abc.abstractmethod
-    def before_step_log(self, oper_type, oper_name, case_id, case_exec_id, node_id, component_id, *key, **kwargs):
-        """
-        在步骤（控件基本操作，获取数据，组件等）前执行，记录日志
-        :param oper_type:
-        :param oper_name:
-        :param case_id:
-        :param case_exec_id:
-        :param node_id:
-        :param component_id:
-        :return:
-        """
+    def step_log_before(self, oper_type, oper_name, oper_id, parent_oper_id = None, *key, **kwargs):
         pass
 
     @abc.abstractmethod
-    def after_step_log(self, oper_type, oper_name, case_id, case_exec_id, node_id, component_id, oper_time, result, log_content, *key, **kwargs):
-        """
-        在步骤（控件基本操作，获取数据，组件等）后执行，记录日志
-        :param log_content:
-        :param oper_type:
-        :param oper_name:
-        :param case_id:
-        :param case_exec_id:
-        :param node_id:
-        :param component_id:
-        :param oper_time:
-        :param result:
-        :return:
-        """
+    def step_log_after(self, oper_type, oper_name, oper_id, oper_time, result, log_content, parent_oper_id = None, *key, **kwargs):
         pass
 
     @abc.abstractmethod
-    def before_case_log(self, case_id, case_exec_id,  node_id, case_name, module_name, *key, **kwargs):
-        """
-        在案例执行前记录日志
-        :param node_id:
-        :param case_id:
-        :param case_exec_id:
-        :param case_name:
-        :param module_name:
-        :return:
-        """
+    def case_log_before(self, *key, **kwargs):
         pass
 
     @abc.abstractmethod
-    def after_case_log(self, case_id, case_exec_id,  node_id, case_name, module_name, result, run_time, log_content, *key, **kwargs):
-        """
-        在案例执行后记录日志
-        :param node_id:
-        :param case_id:
-        :param case_exec_id:
-        :param case_name:
-        :param module_name:
-        :param result:
-        :param run_time:
-        :param log_content:
-        :return:
-        """
+    def case_log_after(self, result, run_time, log_content, *key, **kwargs):
         pass
 
     @abc.abstractmethod
-    def element_log(self, case_id, case_exec_id, node_id, element, action):
-        """
-        记录空间操作
-        :param case_id:
-        :param case_exec_id:
-        :param node_id:
-        :param element:
-        :param action:
-        :return:
-        """
+    def plan_log_before(self, *key, **kwargs):
+        pass
+
+    @abc.abstractmethod
+    def plan_log_after(self, *key, **kwargs):
         pass

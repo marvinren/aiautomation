@@ -10,6 +10,7 @@ import socket
 
 import time
 
+from aiautomation.testcase.test_plan import PlanInfo, TestPlanRunner
 from aiautomation.utils.log import get_logger
 
 log = get_logger(__name__)
@@ -98,9 +99,15 @@ class Agent():
 
         dto = json.loads(body, encoding='UTF-8')
         resp['case_exec_id'] = str(dto['caseExecId'])
-        timeout = None
-        if dto['timeout']:
-            timeout = int(dto['timeout'])
+
+        plan = PlanInfo(str(dto['planId']), "自动测试任务",
+                        str(dto['planBatchId']), str(dto['execBatchId']),
+                        str(dto['env']), str(dto['machine']),
+                        str(dto['planDataId']), '0')
+        plan_runner = TestPlanRunner(plan=plan)
+
+        plan_runner.agent_run(str(dto['caseId']), str(dto['caseExecId']),
+                              0, str(dto['uiScrpit']))
 
         response = json.dumps(resp)
 

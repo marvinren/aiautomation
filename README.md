@@ -38,8 +38,17 @@ iframe gui文件 window
 
 ## TODO
 1. iframe 穿透
-2. config文件读取
+
 3. gui文件
 4. 等待
 5. runner/data
+7. check point
+8. agent get task
+9. case log override?
+10. plan/case missing?
+
+# Done
+2. config文件读取
 6. fireEvent
+9. log
+10. plan runner

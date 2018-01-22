@@ -68,7 +68,7 @@ class LogConfig(object):
             os.makedirs(dirname, 0o755)
         logging.basicConfig(filename=self.log_path, level=self.log_level)
 
-    def get_logger(self, name, logfd=None):
+    def get_logger(self, name: object, logfd: object = None) -> object:
         logger = logging.getLogger(name)
         logger.setLevel(logging.DEBUG)
         max_rotate_handler = AIRotatingFileHandler(self.log_path, maxBytes=10 * 1024 * 1024, backupCount=30)
