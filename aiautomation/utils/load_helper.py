@@ -1,5 +1,6 @@
 import sys
 import traceback
+from imp import reload
 
 
 def import_class(import_str):
@@ -9,6 +10,7 @@ def import_class(import_str):
     mod_str, _sep, class_str = import_str.rpartition('.')
     __import__(mod_str)
     try:
+        #reload(sys.modules[mod_str])
         return getattr(sys.modules[mod_str], class_str)
     except AttributeError:
         raise ImportError('Class %s cannot be found (%s)' %

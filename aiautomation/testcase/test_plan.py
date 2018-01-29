@@ -3,6 +3,7 @@ import sys
 import traceback
 from functools import wraps
 
+from aiautomation.testcase.test_case_generator import TestcaseGenerator
 from aiautomation.utils.config import Config
 from aiautomation.utils.load_helper import import_object
 from aiautomation.utils.log import get_logger
@@ -81,35 +82,44 @@ class TestPlanRunner:
             self.case_list.append({"module_name": module_name, "case_name": case_name, "data": data})
 
     def simple_run(self, module_name, case_name, data=None):
-        try:
-            module_obj = import_object("%s.%s.%s" % (self._project_case_path, module_name, module_name),
-                                       scenarios_recovery=self._recovery, logger=self._logger, config=self._config)
-            case_method = getattr(module_obj, case_name)
+        module_obj = import_object("%s.%s.%s" % (self._project_case_path, module_name, module_name),
+                                   scenarios_recovery=self._recovery, logger=self._logger, config=self._config)
+        case_method = getattr(module_obj, case_name)
+        return case_method(data)
 
-            case_method(data)
-        except Exception as e:
-            log.error(e)
-            log.error(traceback.format_exc())
+    def run_case_by_case_exec_id(self, case_exec_id, case_id):
+        tg = TestcaseGenerator(config=self._config)
+        try:
+            tg.connection()
+            tg.generate_case_by_case_ids(case_id, case_exec_id)
+            names = tg.fetch_case_name_module_name(case_id)
+        finally:
+            tg.disconnection()
+        print(names)
+        self.simple_run(names['group_name'], names['case_name'])
 
     def agent_run(self, case_id, case_exec_id, module_id, script_str):
-        file_name = "./case/%s_%s.py" % (case_id, case_exec_id)
+        file_name = "./cases/module_%s_%s.py" % (case_id, case_exec_id)
         module_name = "module_%s_%s" % (case_id, case_exec_id)
         case_name = "case_%s_%s" % (case_id, case_exec_id)
         script = """
+# -*- coding: UTF-8 -*-
 from aiautomation.testcase.decorator import testcase
 from aiautomation.testcase.test_case_module import TestCaseModule
 
 
 class %s(TestCaseModule):
 
-    @testcase(case_id=%d, case_exec_id=%d, module_id=%d)
-    def %s(self, data=None):
-%s            
-""" % (module_name, case_id, case_exec_id, module_id, case_name, script_str)
+    @testcase(case_id=%s, case_exec_id=%s, module_id=%s)
+    def %s(self, data=None): 
+%s           
+""" % (module_name, case_id, case_exec_id, module_id, case_name, "\n".join(list(map(lambda x: "\t\t%s" % x, script_str.split("\n")))))
 
         with open(file_name, "w") as file:
-            for line in script_str.split("\n"):
-                file.write("\t\t%s\n" % line)
+            file.write(script)
+            # file.write("\n")
+            # for line in script_str.split("\n"):
+            #     file.write("\t\t%s\n" % line)
         self.simple_run(module_name, case_name)
 
     @plan_run
@@ -148,7 +158,7 @@ class %s(TestCaseModule):
 
     def set_project_case_path(self):
         try:
-            self._project_case_path = self._config.aiautomation.runner.project_case_path
+            self._project_case_path = self._config.aiautomation.runner.project_base_path + ".cases"
         except:
             log.warn("请查看配置文件中的aiautomation.runner.project_case_path， 工程路径设置为[cases]")
             self._project_case_path = "cases"

@@ -3,6 +3,7 @@ import json
 
 import _thread
 import threading
+import traceback
 
 import pika
 import psutil
@@ -10,6 +11,9 @@ import socket
 
 import time
 
+import sys
+
+from aiautomation.log.abstract_log import AbstractLog
 from aiautomation.testcase.test_plan import PlanInfo, TestPlanRunner
 from aiautomation.utils.log import get_logger
 
@@ -40,12 +44,16 @@ class ReportStateThread(threading.Thread):
 
 class Agent():
     def __init__(self, config=None):
+        self.config = config
+
         self._agent_id = config.getConfig().aiautomation.agent.agent_id
         self._mq_host = config.getConfig().aiautomation.agent.mq_host
         self._mq_port = config.getConfig().aiautomation.agent.mq_port
         self._mq_user = config.getConfig().aiautomation.agent.mq_user
         self._mq_pwd = str(config.getConfig().aiautomation.agent.mq_pwd)
         self._report_delay = config.getConfig().aiautomation.agent.report_delay
+
+        self.plan_runner = TestPlanRunner()
 
     @property
     def agent_id(self):
@@ -92,54 +100,42 @@ class Agent():
         t = ReportStateThread(self)
         t.start()
 
-    def on_request(self, ch, method, props, body):
-        resp = {'status': 9, 'fail_reason': '', 'agent': self._agent_id}
-
-        log.info("-----------------------the message has bean received. --------------------------\n %r" % body)
-
-        dto = json.loads(body, encoding='UTF-8')
-        resp['case_exec_id'] = str(dto['caseExecId'])
-
-        plan = PlanInfo(str(dto['planId']), "自动测试任务",
-                        str(dto['planBatchId']), str(dto['execBatchId']),
-                        str(dto['env']), str(dto['machine']),
-                        str(dto['planDataId']), '0')
-        plan_runner = TestPlanRunner(plan=plan)
-
-        plan_runner.agent_run(str(dto['caseId']), str(dto['caseExecId']),
-                              0, str(dto['uiScrpit']))
-
-        response = json.dumps(resp)
-
-        self._channel.queue_declare(queue='case_finish', durable=True)
-        self._channel.basic_publish(exchange='',
-                                    routing_key='case_finish',
-                                    body=response,
-                                    properties=pika.BasicProperties(
-                                        delivery_mode=2,  # make message persistent
-                                        content_type='application/json'
-                                    ))
-
     def start_task_receive(self):
+        channel = self.get_channel()
+
         def on_request(ch, method, props, body):
             resp = {'status': 9, 'fail_reason': '', 'agent': self._agent_id}
 
             log.info("-----------------------the message has bean received. --------------------------\n %r" % body)
 
             dto = json.loads(body, encoding='UTF-8')
+            # resp['case_id'] = str(dto['caseId'])
             resp['case_exec_id'] = str(dto['caseExecId'])
-            timeout = None
-            if dto['timeout']:
-                timeout = int(dto['timeout'])
+
+            project_base_path = self.config.getConfig().aiautomation.runner.project_base_path
+            project_module_sys_in_list = list(filter(lambda x: x.startswith(project_base_path), sys.modules.keys()))
+            for module in project_module_sys_in_list:
+                del sys.modules[module]
+
+
+            try:
+                print(str(dto['caseExecId']))
+                self.plan_runner.run_case_by_case_exec_id(str(dto['caseExecId']), str(dto['caseId']))
+                #resp['status'] = AbstractLog.SUCCESS_STATUS
+            except Exception as e:
+                resp['status'] = AbstractLog.ERROR_STATUS
+                resp['fail_reason'] = str(e)
+                log.error(traceback.format_exc())
+                log.error(e)
 
             response = json.dumps(resp)
 
-            self._channel.queue_declare(queue='case_finish', durable=True)
-            self._channel.basic_publish(exchange='', routing_key='case_finish', body=response,
-                                        properties=pika.BasicProperties(
-                                            delivery_mode=2,  # make message persistent
-                                            content_type='application/json'))
-        channel = self.get_channel()
+            channel.queue_declare(queue='case_finish', durable=True)
+            channel.basic_publish(exchange='', routing_key='case_finish', body=response,
+                                  properties=pika.BasicProperties(
+                                      delivery_mode=2,  # make message persistent
+                                      content_type='application/json'))
+
         queue_name = str(self._agent_id)
         channel.queue_declare(queue=queue_name, exclusive=True)
 

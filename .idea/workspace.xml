@@ -2,86 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a47ba3-fd48-44c7-8f27-05de8e152e9e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/aiautomation/gui/page.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aiautomation/testcase/test_plan.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aiautomation/utils/load_helper.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/cases/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/cases/需求录入.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/cases/需求查询.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/cases/需求评审.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/datas/需求录入_普通需求录入.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/datas/需求查询_按需求名称查询.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/pages/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/pages/主界面.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/pages/登录页面.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/pages/需求录入页面.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/pages/需求查询页面.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/pages/需求评审页面.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sample/test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/agent_test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/case/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/case/百度搜索.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/config.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/gui/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/gui/百度搜索页面.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/recovery/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/recovery/recovery.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/baidu/test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aialm/cases/需求审批.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aialm/data/需求评审/一般需求评审.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aialm/pages/需求审批.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aialm/run.cmd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aialm/runcase.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aiautomation/testcase/test_case_generator.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/TODO.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/install.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/aiautomation/agent/agent.py" afterPath="$PROJECT_DIR$/aiautomation/agent/agent.py" />
-      <change beforePath="$PROJECT_DIR$/aiautomation/log/abstract_log.py" afterPath="$PROJECT_DIR$/aiautomation/log/abstract_log.py" />
       <change beforePath="$PROJECT_DIR$/aiautomation/log/aici_result_log.py" afterPath="$PROJECT_DIR$/aiautomation/log/aici_result_log.py" />
-      <change beforePath="$PROJECT_DIR$/aiautomation/log/simple_log.py" afterPath="$PROJECT_DIR$/aiautomation/log/simple_log.py" />
-      <change beforePath="$PROJECT_DIR$/aiautomation/runner.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/aiautomation/testcase/browser.py" afterPath="$PROJECT_DIR$/aiautomation/testcase/browser.py" />
-      <change beforePath="$PROJECT_DIR$/aiautomation/testcase/decorator.py" afterPath="$PROJECT_DIR$/aiautomation/testcase/decorator.py" />
       <change beforePath="$PROJECT_DIR$/aiautomation/testcase/element.py" afterPath="$PROJECT_DIR$/aiautomation/testcase/element.py" />
-      <change beforePath="$PROJECT_DIR$/aiautomation/testcase/test_case.py" afterPath="$PROJECT_DIR$/aiautomation/testcase/test_case_module.py" />
+      <change beforePath="$PROJECT_DIR$/aiautomation/testcase/test_plan.py" afterPath="$PROJECT_DIR$/aiautomation/testcase/test_plan.py" />
+      <change beforePath="$PROJECT_DIR$/aiautomation/utils/load_helper.py" afterPath="$PROJECT_DIR$/aiautomation/utils/load_helper.py" />
       <change beforePath="$PROJECT_DIR$/aiautomation/utils/log.py" afterPath="$PROJECT_DIR$/aiautomation/utils/log.py" />
-      <change beforePath="$PROJECT_DIR$/sample/agent.py" afterPath="$PROJECT_DIR$/sample/agent.py" />
-      <change beforePath="$PROJECT_DIR$/sample/case/__init__.py" afterPath="$PROJECT_DIR$/aiautomation/aiautomation_agent.py" />
-      <change beforePath="$PROJECT_DIR$/sample/case/需求录入.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sample/case/需求查询.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sample/config.yml" afterPath="$PROJECT_DIR$/sample/config.yml" />
-      <change beforePath="$PROJECT_DIR$/sample/gui/__init__.py" afterPath="$PROJECT_DIR$/aiautomation/gui/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/sample/gui/测试平台.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sample/include/aialm_helper.py" afterPath="$PROJECT_DIR$/sample/include/aialm_helper.py" />
-      <change beforePath="$PROJECT_DIR$/sample/include/common_component.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sample/other.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sample/recovery/aialm_recovery.py" afterPath="$PROJECT_DIR$/sample/recovery/aialm_recovery.py" />
-      <change beforePath="$PROJECT_DIR$/sample/t2.py" afterPath="$PROJECT_DIR$/sample/t2.py" />
-      <change beforePath="$PROJECT_DIR$/sample/testplat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/sample/testrun.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/simple_test.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/Agent.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/Assert.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/BasicFunction.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/DBpool.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/ExecuteDb.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/ObjectAction.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/Ocr.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/OcrMod.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/PackFunction.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/Report.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/Run.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/RunCase.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/StepReport.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/case/1001_9001.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/case/1001_9002.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/case/1001_9003.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/case/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trunk/config.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/nosetests-3.4.exe" afterPath="$PROJECT_DIR$/venv/Scripts/nosetests-3.4.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/nosetests.exe" afterPath="$PROJECT_DIR$/venv/Scripts/nosetests.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel.exe" afterPath="$PROJECT_DIR$/venv/Scripts/wheel.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
+      <change beforePath="$PROJECT_DIR$/sample/__init__.py" afterPath="$PROJECT_DIR$/aialm/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/sample/agent.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/cases/__init__.py" afterPath="$PROJECT_DIR$/aialm/agent.py" />
+      <change beforePath="$PROJECT_DIR$/sample/cases/需求录入.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/cases/需求查询.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/cases/需求评审.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/config.yml" afterPath="$PROJECT_DIR$/aialm/config.yml" />
+      <change beforePath="$PROJECT_DIR$/sample/datas/需求录入_普通需求录入.csv" afterPath="$PROJECT_DIR$/aialm/include/公共组件.py" />
+      <change beforePath="$PROJECT_DIR$/sample/datas/需求查询_按需求名称查询.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/include/__init__.py" afterPath="$PROJECT_DIR$/aialm/include/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/sample/include/aialm_helper.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/pages/__init__.py" afterPath="$PROJECT_DIR$/aialm/include/场景恢复.py" />
+      <change beforePath="$PROJECT_DIR$/sample/pages/主界面.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/pages/登录页面.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/pages/需求录入页面.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/pages/需求查询页面.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/pages/需求评审页面.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/recovery/__init__.py" afterPath="$PROJECT_DIR$/aialm/run.py" />
+      <change beforePath="$PROJECT_DIR$/sample/recovery/aialm_recovery.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/t2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sample/test.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,19 +50,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/aiautomation$run.coverage" NAME="run Coverage Results" MODIFIED="1516795027903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aialm" />
     <SUITE FILE_PATH="coverage/aiautomation$simple_test.coverage" NAME="simple_test Coverage Results" MODIFIED="1515746753350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/aiautomation$testrun.coverage" NAME="testrun Coverage Results" MODIFIED="1516547635892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
     <SUITE FILE_PATH="coverage/aiautomation$inject.coverage" NAME="inject Coverage Results" MODIFIED="1516518739297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
-    <SUITE FILE_PATH="coverage/aiautomation$agent.coverage" NAME="agent Coverage Results" MODIFIED="1516615182572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
+    <SUITE FILE_PATH="coverage/aiautomation$agent.coverage" NAME="agent Coverage Results" MODIFIED="1516796197714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
     <SUITE FILE_PATH="coverage/aiautomation$test.coverage" NAME="test Coverage Results" MODIFIED="1516602242349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
+    <SUITE FILE_PATH="coverage/aiautomation$test_case_generator.coverage" NAME="test_case_generator Coverage Results" MODIFIED="1516707949527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiautomation/testcase" />
+    <SUITE FILE_PATH="coverage/aiautomation$agent__1_.coverage" NAME="agent (1) Coverage Results" MODIFIED="1517192750021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aialm" />
     <SUITE FILE_PATH="coverage/aiautomation$.coverage" NAME="需求查询 Coverage Results" MODIFIED="1516098798619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample/case" />
     <SUITE FILE_PATH="coverage/aiautomation$testplat.coverage" NAME="testplat Coverage Results" MODIFIED="1516242076877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
     <SUITE FILE_PATH="coverage/aiautomation$setup.coverage" NAME="setup Coverage Results" MODIFIED="1516069754243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aiautomation$t2.coverage" NAME="t2 Coverage Results" MODIFIED="1516615926028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
+    <SUITE FILE_PATH="coverage/aiautomation$t2.coverage" NAME="t2 Coverage Results" MODIFIED="1516775601772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
     <SUITE FILE_PATH="coverage/aiautomation$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1516532820435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/baidu" />
+    <SUITE FILE_PATH="coverage/aiautomation$book.coverage" NAME="book Coverage Results" MODIFIED="1516871827505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aialm" />
     <SUITE FILE_PATH="coverage/aiautomation$other.coverage" NAME="other Coverage Results" MODIFIED="1516362335372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample" />
     <SUITE FILE_PATH="coverage/aiautomation$agent_test.coverage" NAME="agent_test Coverage Results" MODIFIED="1516455506248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/baidu" />
     <SUITE FILE_PATH="coverage/aiautomation$aialm_helper.coverage" NAME="aialm_helper Coverage Results" MODIFIED="1516547631227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample/include" />
+    <SUITE FILE_PATH="coverage/aiautomation$runcase.coverage" NAME="runcase Coverage Results" MODIFIED="1517056949555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aialm" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -121,63 +85,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/test.py">
+      <file leaf-file-name="需求审批.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aialm/pages/需求审批.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aialm_recovery.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/recovery/aialm_recovery.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_plan.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aiautomation/testcase/test_plan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="97" column="20" lean-forward="true" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/t2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="399">
+              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="agent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/agent.py">
+        <entry file="file://$PROJECT_DIR$/aialm/agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="168">
+              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -186,40 +108,85 @@
       <file leaf-file-name="agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aiautomation/agent/agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+            <state relative-caret-position="-208">
+              <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aiautomation_agent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aiautomation/aiautomation_agent.py">
+      <file leaf-file-name="aici_result_log.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aiautomation/log/aici_result_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="573">
+              <caret line="108" column="39" lean-forward="false" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
+              <folding>
+                <marker date="1517192698546" expanded="true" signature="1352:1564" ph="insert into case_oper_log... " />
+                <marker date="1517192698546" expanded="true" signature="2165:2218" ph="select case_... case_def" />
+                <marker date="1517192698546" expanded="true" signature="2371:2482" ph="INSERT INTO case_def... " />
+                <marker date="1517192698546" expanded="true" signature="2723:2774" ph="update case_def... " />
+                <marker date="1517192698546" expanded="true" signature="3007:3078" ph="select count... case_exec_log" />
+                <marker date="1517192698546" expanded="true" signature="3253:3463" ph="INSERT INTO case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="4389:4516" ph="UPDATE case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="4389:4542" ph="UPDATE case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="4861:4904" ph="update case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="5083:5120" ph="update case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="5288:5321" ph="update case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="5493:5533" ph="update case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="5688:5748" ph="delete from case_oper_log... " />
+                <marker date="1517192698546" expanded="true" signature="6020:6116" ph="update case_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="6851:6989" ph="INSERT INTO plan_exec_log... " />
+                <marker date="1517192698546" expanded="true" signature="7429:7537" ph="update plan_exec_log... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="一般需求评审.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aialm/data/需求评审/一般需求评审.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="公共组件.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aialm/include/公共组件.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2562">
+              <caret line="127" column="29" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aiautomation/testcase/browser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2751">
+              <caret line="142" column="8" lean-forward="false" selection-start-line="142" selection-start-column="8" selection-end-line="142" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="需求审批.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aialm/cases/需求审批.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="需求录入.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/cases/需求录入.py">
+        <entry file="file://$PROJECT_DIR$/aialm/cases/需求录入.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="decorator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aiautomation/testcase/decorator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+            <state relative-caret-position="315">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -236,20 +203,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>click</find>
-      <find>pring</find>
-      <find>logger.testcase</find>
-      <find>recover</find>
-      <find>logger.</find>
-      <find>config</find>
-      <find>implicitlyWait</find>
-      <find>implicitly</find>
-      <find>page</find>
-      <find>pageLoadStrategy</find>
-      <find>desired_capabilities</find>
-      <find>event</find>
-      <find>focus</find>
-      <find>submit</find>
       <find>execute_script</find>
       <find>asy</find>
       <find>getCon</find>
@@ -266,6 +219,20 @@
       <find>window</find>
       <find>swit</find>
       <find>print</find>
+      <find>self.</find>
+      <find>\t</find>
+      <find>name</find>
+      <find>更新计划数据</find>
+      <find>exception</find>
+      <find>project</find>
+      <find>case_path</find>
+      <find>case.</find>
+      <find>project_case</find>
+      <find>create</find>
+      <find>text</find>
+      <find>find_element</find>
+      <find>dbl_click</find>
+      <find>_driver</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -277,40 +244,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/aiautomation/runner.py" />
-        <option value="$PROJECT_DIR$/aiautomation/utils/load_helper.py" />
-        <option value="$PROJECT_DIR$/sample/include/common_component.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="D:/Program Files/Python/Python36-32/Lib/multiprocessing/context.py" />
-        <option value="$PROJECT_DIR$/sample/other.py" />
-        <option value="$PROJECT_DIR$/sample/testplat.py" />
-        <option value="$PROJECT_DIR$/tests/baidu/recovery/recovery.py" />
-        <option value="$PROJECT_DIR$/aiautomation/testcase/test_case.py" />
-        <option value="$PROJECT_DIR$/aiautomation/aiautomation_agent.py" />
-        <option value="$PROJECT_DIR$/tests/baidu/agent_test.py" />
-        <option value="$PROJECT_DIR$/tests/baidu/test.py" />
-        <option value="$PROJECT_DIR$/aiautomation/log/aici_result_log.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/sample/inject.py" />
-        <option value="$PROJECT_DIR$/aiautomation/testcase/decorator.py" />
-        <option value="$PROJECT_DIR$/aiautomation/log/abstract_log.py" />
-        <option value="$PROJECT_DIR$/tests/baidu/gui/百度搜索.py" />
-        <option value="$PROJECT_DIR$/tests/baidu/config.yml" />
-        <option value="$PROJECT_DIR$/tests/baidu/case/百度搜索.py" />
-        <option value="$PROJECT_DIR$/tests/baidu/gui/百度搜索页面.py" />
-        <option value="$PROJECT_DIR$/aiautomation/log/simple_log.py" />
-        <option value="$PROJECT_DIR$/sample/gui/需求录入页面.py" />
-        <option value="$PROJECT_DIR$/aiautomation/testcase/element.py" />
-        <option value="$PROJECT_DIR$/aiautomation/gui/page_object.py" />
-        <option value="$PROJECT_DIR$/sample/case/需求录入.py.bak" />
-        <option value="$PROJECT_DIR$/sample/case/需求录入.py" />
-        <option value="$PROJECT_DIR$/aiautomation/testcase/test_case_module.py" />
-        <option value="$PROJECT_DIR$/aiautomation/gui/page.py" />
-        <option value="$PROJECT_DIR$/sample/pages/需求录入页面.py" />
         <option value="$PROJECT_DIR$/sample/pages/需求查询页面.py" />
         <option value="$PROJECT_DIR$/sample/case/需求查询.py" />
-        <option value="$PROJECT_DIR$/aiautomation/testcase/browser.py" />
         <option value="$PROJECT_DIR$/sample/include/aialm_helper.py" />
         <option value="$PROJECT_DIR$/sample/datas/需求查询数据.csv" />
         <option value="$PROJECT_DIR$/sample/datas/需求查询_按需求名称查询.csv" />
@@ -321,13 +256,45 @@
         <option value="$PROJECT_DIR$/sample/pages/登录页面.py" />
         <option value="$PROJECT_DIR$/sample/cases/需求查询.py" />
         <option value="$PROJECT_DIR$/sample/cases/需求评审.py" />
-        <option value="$PROJECT_DIR$/sample/config.yml" />
         <option value="$PROJECT_DIR$/sample/test.py" />
+        <option value="$PROJECT_DIR$/sample/cases/module_102801_1151424.py" />
+        <option value="$PROJECT_DIR$/sample/config.yml" />
         <option value="$PROJECT_DIR$/sample/agent.py" />
-        <option value="$PROJECT_DIR$/sample/t2.py" />
+        <option value="$PROJECT_DIR$/sample/pages/需求录入页面.py" />
         <option value="$PROJECT_DIR$/sample/cases/需求录入.py" />
-        <option value="$PROJECT_DIR$/aiautomation/agent/agent.py" />
+        <option value="$PROJECT_DIR$/sample/t2.py" />
+        <option value="$PROJECT_DIR$/aialm/include/场景回复.py" />
+        <option value="$PROJECT_DIR$/aialm/include/场景恢复.py" />
+        <option value="$PROJECT_DIR$/aialm/cases/需求查询.py" />
+        <option value="$PROJECT_DIR$/aialm/pages/登录.py" />
+        <option value="$PROJECT_DIR$/aialm/cases/需求录入.py" />
+        <option value="$PROJECT_DIR$/aialm/pages/需求录入.py" />
+        <option value="$PROJECT_DIR$/aialm/pages/需求查询.py" />
+        <option value="$PROJECT_DIR$/aialm/run.py" />
+        <option value="$PROJECT_DIR$/aialm/book.py" />
+        <option value="$PROJECT_DIR$/aiautomation/utils/load_helper.py" />
+        <option value="$PROJECT_DIR$/aialm/config.yml" />
         <option value="$PROJECT_DIR$/aiautomation/testcase/test_plan.py" />
+        <option value="$PROJECT_DIR$/aiautomation/log/abstract_log.py" />
+        <option value="$PROJECT_DIR$/aiautomation/log/simple_log.py" />
+        <option value="$PROJECT_DIR$/aiautomation/utils/log.py" />
+        <option value="$PROJECT_DIR$/aiautomation/testcase/test_case_generator.py" />
+        <option value="$PROJECT_DIR$/docs/TODO.md" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/docs/install.md" />
+        <option value="$PROJECT_DIR$/aiautomation/agent/agent.py" />
+        <option value="$PROJECT_DIR$/aialm/agent.py" />
+        <option value="$PROJECT_DIR$/aialm/data/需求录入.csv" />
+        <option value="$PROJECT_DIR$/aialm/runcase.py" />
+        <option value="$PROJECT_DIR$/aiautomation/testcase/element.py" />
+        <option value="$PROJECT_DIR$/aiautomation/testcase/browser.py" />
+        <option value="$PROJECT_DIR$/aialm/pages/需求评审.py" />
+        <option value="$PROJECT_DIR$/aialm/cases/需求评审.py" />
+        <option value="$PROJECT_DIR$/aialm/include/公共组件.py" />
+        <option value="$PROJECT_DIR$/aialm/cases/需求审批.py" />
+        <option value="$PROJECT_DIR$/aialm/data/需求评审.csv" />
+        <option value="$PROJECT_DIR$/aialm/pages/需求审批.py" />
+        <option value="$PROJECT_DIR$/aiautomation/log/aici_result_log.py" />
       </list>
     </option>
   </component>
@@ -338,8 +305,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="976" />
+    <option name="x" value="3312" />
+    <option name="y" value="-6" />
+    <option name="width" value="1934" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -378,6 +346,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -388,13 +357,43 @@
             <path>
               <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="aialm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="aialm" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="aialm" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="aialm" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="需求评审" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="aialm" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="aialm" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
               <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
@@ -402,55 +401,29 @@
               <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aiautomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aiautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="case_exec_finsh&#9;null&#9;null&#10;boot j&#9;ACTION&#9;SwitchBootJdk&#10;WebEl&#9;FILE&#9;file://C:/Users/Administrator/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/selenium/webdriver/remote/webelement.py&#10;add_oper_log&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/python_workspace/aiautomation/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py&#10;agent&#9;FILE&#9;file://D:/python_workspace/aiautomation/aiautomation/agent/agent.py&#10;case_exec_finsh&#9;null&#9;null&#10;boot j&#9;ACTION&#9;SwitchBootJdk&#10;WebEl&#9;FILE&#9;file://C:/Users/Administrator/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/selenium/webdriver/remote/webelement.py&#10;add_oper_log&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\python_workspace\aiautomation\sample\include" />
-      <recent name="D:\python_workspace\aiautomation\aiautomation\testcase" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python_workspace\aiautomation\aialm" />
+      <recent name="D:\python_workspace\aiautomation\aiautomation\testcase" />
       <recent name="D:\python_workspace\aiautomation\tests\baidu" />
       <recent name="D:\python_workspace\aiautomation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python_workspace\aiautomation\aialm\data\需求评审" />
+      <recent name="D:\python_workspace\aiautomation\sample\include" />
+      <recent name="D:\python_workspace\aiautomation\aiautomation\testcase" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,7 +438,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.t2">
+  <component name="RunManager" selected="Python.agent (1)">
+    <configuration name="agent (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aialm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aiui" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aialm/agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -485,96 +477,77 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="aialm_helper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="book" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample/include" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aialm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="aiui" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample/include/aialm_helper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aialm/book.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="t2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aialm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="aiui" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample/t2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aialm/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="runcase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aialm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="aiui" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="testrun" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="aiui" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample/testrun.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aialm/runcase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.testrun" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.aialm_helper" />
-      <item index="3" class="java.lang.String" itemvalue="Python.agent" />
-      <item index="4" class="java.lang.String" itemvalue="Python.t2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.agent" />
+      <item index="1" class="java.lang.String" itemvalue="Python.run" />
+      <item index="2" class="java.lang.String" itemvalue="Python.runcase" />
+      <item index="3" class="java.lang.String" itemvalue="Python.agent (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.book" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.t2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.agent" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testrun" />
-        <item index="4" class="java.lang.String" itemvalue="Python.aialm_helper" />
+        <item index="0" class="java.lang.String" itemvalue="Python.agent (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.runcase" />
+        <item index="2" class="java.lang.String" itemvalue="Python.book" />
+        <item index="3" class="java.lang.String" itemvalue="Python.agent" />
+        <item index="4" class="java.lang.String" itemvalue="Python.run" />
       </list>
     </recent_temporary>
   </component>
@@ -604,8 +577,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="2391" y="1" width="2418" height="1331" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -613,9 +585,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3523375" sideWeight="0.512301" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50852275" sideWeight="0.48769897" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30172414" sideWeight="0.48769897" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33172563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2084399" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -627,7 +599,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.327252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -643,7 +615,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/aiautomation/testcase/browser.py</url>
-          <line>116</line>
+          <line>131</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -652,339 +624,341 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trunk/Run.py" />
-    <entry file="file://$PROJECT_DIR$/trunk/case/1001_9001.py" />
-    <entry file="file://$PROJECT_DIR$/trunk/Report.py" />
-    <entry file="file://$PROJECT_DIR$/trunk/StepReport.py" />
-    <entry file="file://$PROJECT_DIR$/trunk/RunCase.py" />
-    <entry file="file://$PROJECT_DIR$/trunk/PackFunction.py" />
-    <entry file="file://$PROJECT_DIR$/tests/baidu/agent_test.py">
+    <entry file="file://$PROJECT_DIR$/aialm/include/场景恢复.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/inject.py" />
-    <entry file="file://$PROJECT_DIR$/tests/baidu/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webelement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="137" column="20" lean-forward="false" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/log/abstract_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="380">
-            <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/gui/测试平台.json" />
-    <entry file="file://$PROJECT_DIR$/tests/baidu/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/baidu/gui/百度搜索页面.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/log/simple_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/baidu/case/百度搜索.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/log/aici_result_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/support/expected_conditions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/ie/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="154" column="32" lean-forward="false" selection-start-line="154" selection-start-column="32" selection-end-line="154" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/switch_to.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1159">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/case/需求录入.py.bak" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4956">
-          <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/test_case_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="103" column="38" lean-forward="false" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/gui/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/browser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/include/common_component.py" />
-    <entry file="file://$PROJECT_DIR$/sample/logs/aiautomation.log" />
-    <entry file="file://$PROJECT_DIR$/sample/datas/需求录入_普通需求录入.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/pages/需求评审页面.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/include/aialm_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="113" column="28" lean-forward="false" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/pages/需求查询页面.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/pages/需求录入页面.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/datas/需求查询_按需求名称查询.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/pages/登录页面.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/cases/需求查询.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="e#17#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/pages/主界面.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/cases/需求评审.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aiautomation/aiautomation_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="147">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/config.yml">
+    <entry file="file://$PROJECT_DIR$/sample/agent.py" />
+    <entry file="file://$PROJECT_DIR$/sample/pages/需求查询.py" />
+    <entry file="file://$PROJECT_DIR$/sample/cases/需求查询.py" />
+    <entry file="file://$PROJECT_DIR$/sample/cases/需求评审.py" />
+    <entry file="file://$PROJECT_DIR$/sample/include/aialm_helper.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/switch_to.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="162">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/test.py">
+    <entry file="file://$PROJECT_DIR$/aialm/pages/需求录入.py.bak" />
+    <entry file="file://$PROJECT_DIR$/sample/cases/需求录入.py" />
+    <entry file="file://$PROJECT_DIR$/sample/pages/需求录入页面.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/imp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="162">
+          <caret line="306" column="4" lean-forward="false" selection-start-line="306" selection-start-column="4" selection-end-line="306" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/recovery/aialm_recovery.py">
+    <entry file="file://$PROJECT_DIR$/aialm/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="315">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/book.py" />
+    <entry file="file://$PROJECT_DIR$/aiautomation/utils/load_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/test_plan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="90" column="8" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/log/simple_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/log/abstract_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/utils/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="119" column="33" lean-forward="false" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/logs/aiautomation.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/test_case_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="158" column="61" lean-forward="false" selection-start-line="158" selection-start-column="61" selection-end-line="158" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/agent.py">
+    <entry file="file://$PROJECT_DIR$/docs/TODO.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="21">
+            <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/install.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/run.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/data/需求录入.csv" />
+    <entry file="file://$PROJECT_DIR$/aialm/cases/空测试用例.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/test_case_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="103" column="8" lean-forward="false" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/pages/登录.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/runcase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1554">
+          <caret line="407" column="20" lean-forward="false" selection-start-line="407" selection-start-column="16" selection-end-line="407" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/gui/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/t2.py">
+    <entry file="file://$PROJECT_DIR$/aialm/cases/需求查询.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="252">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="472" column="43" lean-forward="false" selection-start-line="472" selection-start-column="43" selection-end-line="472" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/common/action_chains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3213">
+          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="62" column="62" lean-forward="false" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/pages/需求查询.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/pages/需求录入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="54" column="20" lean-forward="false" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aiautomation/testcase/decorator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        <state relative-caret-position="357">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/cases/需求录入.py">
+    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/browser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2751">
+          <caret line="142" column="8" lean-forward="false" selection-start-line="142" selection-start-column="8" selection-end-line="142" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/include/公共组件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2562">
+          <caret line="127" column="29" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/cases/需求录入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/data/需求评审/一般需求评审.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/cases/需求审批.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/pages/需求审批.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aialm/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aiautomation/agent/agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+        <state relative-caret-position="-208">
+          <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aiautomation/testcase/test_plan.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="273">
+            <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="59" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiautomation/log/aici_result_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="97" column="20" lean-forward="true" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        <state relative-caret-position="573">
+          <caret line="108" column="39" lean-forward="false" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1517192698546" expanded="true" signature="1352:1564" ph="insert into case_oper_log... " />
+            <marker date="1517192698546" expanded="true" signature="2165:2218" ph="select case_... case_def" />
+            <marker date="1517192698546" expanded="true" signature="2371:2482" ph="INSERT INTO case_def... " />
+            <marker date="1517192698546" expanded="true" signature="2723:2774" ph="update case_def... " />
+            <marker date="1517192698546" expanded="true" signature="3007:3078" ph="select count... case_exec_log" />
+            <marker date="1517192698546" expanded="true" signature="3253:3463" ph="INSERT INTO case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="4389:4516" ph="UPDATE case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="4389:4542" ph="UPDATE case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="4861:4904" ph="update case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="5083:5120" ph="update case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="5288:5321" ph="update case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="5493:5533" ph="update case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="5688:5748" ph="delete from case_oper_log... " />
+            <marker date="1517192698546" expanded="true" signature="6020:6116" ph="update case_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="6851:6989" ph="INSERT INTO plan_exec_log... " />
+            <marker date="1517192698546" expanded="true" signature="7429:7537" ph="update plan_exec_log... " />
           </folding>
         </state>
       </provider>

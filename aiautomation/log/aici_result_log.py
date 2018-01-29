@@ -91,13 +91,27 @@ class AiciResultLog(SimpleLog):
                 self.testcase.case_exec_id = case_exec_id
             else:
                 self.log.warn("已经存在case_exec_id=%s的案例执行日志，进行更新" % kwargs['case_exec_id'])
-                sql = "UPDATE case_exec_log set case_id = '%s', exec_batch_id = '%s'" \
-                      ",status='%s', start_time=now(), end_time=NULL, fail_reason='', machine='%s', env='%s'" \
-                      ",product_id='%s' where case_exec_id = '%s' " \
-                      % (self.safe(kwargs['case_id']), self.safe(kwargs['exec_batch_id']),AbstractLog.START_STATUS,
-                         self.safe(kwargs['machine_id']), self.safe(kwargs['env_id']),self.safe(kwargs['product_id']),
+                sql = "UPDATE case_exec_log set case_id = '%s'" \
+                      ",status='%s', start_time=now(), end_time=NULL, fail_reason='' where case_exec_id = '%s' " \
+                      % (self.safe(kwargs['case_id']), AbstractLog.START_STATUS,
                          self.safe(kwargs['case_exec_id']))
                 cursor.execute(sql)
+                if kwargs['exec_batch_id'] and kwargs['exec_batch_id'] !="" and kwargs['exec_batch_id'] != 0:
+                    sql = "update case_exec_log set exec_batch_id='%s'" % self.safe(kwargs['exec_batch_id'])
+                    cursor.execute(sql)
+
+                if kwargs['machine_id'] and kwargs['machine_id'] != "":
+                    sql = "update case_exec_log set machine='%s'" % self.safe(kwargs['machine_id'])
+                    cursor.execute(sql)
+
+                if kwargs['env_id'] and kwargs['env_id'] != "":
+                    sql = "update case_exec_log set env='%s'" % self.safe(kwargs['env_id'])
+                    cursor.execute(sql)
+
+                if kwargs['product_id'] and kwargs['product_id'] != "":
+                    sql = "update case_exec_log set product_id='%s'" % self.safe(kwargs['product_id'])
+                    cursor.execute(sql)
+
 
                 self.log.warn("删除case_oper_log的原有操作")
                 sql = "delete from case_oper_log where case_exec_id=%s and case_id=%s" % (kwargs['case_exec_id'], kwargs['case_id'])
@@ -140,7 +154,7 @@ class AiciResultLog(SimpleLog):
         SimpleLog.step_log_before(self, oper_type, oper_name, oper_id, parent_oper_id, *key, **kwargs)
         if oper_type == AbstractLog.STEP_TYPE_COMPONENT:
             self.add_case_oper_log(
-                oper_type=oper_type,
+                oper_type=AbstractLog.STEP_TYPE_STEP,
                 oper_name=oper_name,
                 component_id=oper_id,
                 value="",

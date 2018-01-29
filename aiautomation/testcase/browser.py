@@ -1,7 +1,9 @@
 import time
 from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
+from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
+from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from aiautomation.testcase.decorator import step_log
@@ -10,7 +12,7 @@ from aiautomation.log.abstract_log import AbstractLog
 from aiautomation.log.simple_log import SimpleLog
 
 
-class Browser:
+class Browser(RemoteWebDriver):
     """
     该类为webdriver（RemoteWebDriver）的委托类
     """
@@ -66,13 +68,6 @@ class Browser:
     def find_element_by_locate(self, locate):
         return self.find_element(locate[0], locate[1])
 
-    #@step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
-    def switch_to_frame(self, frame_ref):
-        ref = frame_ref
-        if isinstance(ref, Element):
-            ref = ref.web_element
-        self.webdriver.switch_to.frame(ref)
-
     @property
     def windows_handles(self):
         return self.webdriver.window_handles
@@ -97,20 +92,40 @@ class Browser:
                 return
         raise ValueError("未找到适合的window")
 
+    def switch_to_window_by_title(self, title_text):
+        for window_id in self.webdriver.window_handles:
+            self.webdriver.switch_to.window(window_id)
+            if self.webdriver.title == title_text:
+                return
+        raise ValueError("未找到适合的window")
+
     def get_waiter(self, timeout = 7):
+        """
+        获取一个等待器
+        :param timeout:
+        :return:
+        """
         return WebDriverWait(self.webdriver, timeout)
 
-    # @step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
-    # def find_element(self, by, value):
-    #     ret = self.webdriver.find_element(by, value)
-    #     element_delegate = Element(ret, self.logger, "%s:%s" % (by, value))
-    #     return element_delegate
-    #
-    # @step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__)
-    # def find_elements(self, by, value):
-    #     rets = self.webdriver.find_elements(by, value)
-    #     element_delegates = list(map(lambda x: Element(x, self.logger, "%s:%s" % (by, value)), rets))
-    #     return element_delegates
+    def find_element(self, by=By.ID, value=None):
+        """
+        把查询结果用Elment代替
+        :param by:
+        :param value:
+        :return:
+        """
+        ret = self.webdriver.find_element(by, value)
+        return Element(ret, self.logger)
+
+    def find_elements(self, by=By.ID, value=None):
+        """
+        把查询结果用Elment代替
+        :param by:
+        :param value:
+        :return:
+        """
+        rets = self.webdriver.find_elements(by, value)
+        return list(map(lambda e: Element(e, self.logger), rets))
 
     @step_log(AbstractLog.STEP_TYPE_CHECK, __name__)
     def assert_check_point(self, check_point_name, expect_value, real_value, check_func):
@@ -124,22 +139,21 @@ class Browser:
     def assert_check_point_true(self, check_point_name, result):
         return self.assert_check_point_same(check_point_name, True, result)
 
-    def __getattr__(self, name):
+    @step_log(AbstractLog.STEP_TYPE_CHECK, __name__)
+    def wait_windows_size_to_be(self, timeout, window_size):
+        self.get_waiter(timeout).until(expected_conditions.number_of_windows_to_be(window_size))
+
+    def __getattribute__(self, name):
+        # 有些属性，必须使用自己的类的
+        USEMYSELFLIST = ['webdriver']
+        if name in USEMYSELFLIST or name.startswith("find_element"):
+            return object.__getattribute__(self, name)
+
         if hasattr(self.webdriver, name):
-            #如果是查询多个元素要进行封装
-            if name.startswith('find_elements'):
-                def func(*key, **kwargs):
-                    rets = getattr(self.webdriver, name)(*key, **kwargs)
-                    element_delegates = list(map(lambda x: Element(x, self.logger, "%s" % str(key)), rets))
-                    return element_delegates
-                return func
+            if not callable(getattr(self.webdriver, name)):
+                return getattr(self.webdriver, name)
+            else:
+                return step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__, self.logger)(
+                    self.webdriver.__getattribute__(name))
 
-            #如果是查询元素，要进行封装
-            if name.startswith("find_element"):
-                def func(*key, **kwargs):
-                    ret = getattr(self.webdriver, name)(*key, **kwargs)
-                    element_delegate = Element(ret, self.logger, "%s" % str(key))
-                    return element_delegate
-                return func
-
-            return step_log(AbstractLog.STEP_TYPE_ELEMENT, __name__, self.logger)(getattr(self.webdriver, name))
+        return object.__getattribute__(self, name)

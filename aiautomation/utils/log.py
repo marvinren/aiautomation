@@ -50,6 +50,8 @@ class LogConfig(object):
         self.log_level = logging.DEBUG
         self.log_to_console = True
 
+        self.loggers = {}
+
     def set_log_to_console(self, to_console):
         self.log_to_console = to_console
 
@@ -69,6 +71,8 @@ class LogConfig(object):
         logging.basicConfig(filename=self.log_path, level=self.log_level)
 
     def get_logger(self, name: object, logfd: object = None) -> object:
+        if name in self.loggers:
+            return self.loggers[name]
         logger = logging.getLogger(name)
         logger.setLevel(logging.DEBUG)
         max_rotate_handler = AIRotatingFileHandler(self.log_path, maxBytes=10 * 1024 * 1024, backupCount=30)
@@ -84,6 +88,7 @@ class LogConfig(object):
             ch.setLevel(logging.DEBUG)
             ch.setFormatter(formatter)
             logger.addHandler(ch)
+        self.loggers[name] = logger
         return logger
 
     @staticmethod

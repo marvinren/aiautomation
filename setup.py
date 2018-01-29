@@ -10,7 +10,7 @@ setup(name='aiautomation',
       author_email='dtrex@163.com',
       description='The Automation Test Framework',
       packages=find_packages(exclude=['tests', 'logs', 'sample']),
-      long_description=open('README.md', 'r', 'utf-8').read(),
+      long_description="",
       zip_safe=False,
       # setup_requires=[
       #     'nose>=1.0',

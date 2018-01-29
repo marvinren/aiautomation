@@ -8,8 +8,8 @@ aiautomation:
     page_load_timeout: 10 #页面等待的超市时间, 单位：秒
   runner:
     recovery:
-      class_name: sample.recovery.aialm_recovery.AialmRecovery
-    project_case_path: sample.cases #case的路径，如果不配置该项，默认为case
+      class_name: aialm.include.场景恢复.测试平台场景恢复
+    project_base_path: aialm #工程的根路径
     case_resume_close_browser: never #each 每个案例执行完毕都关闭浏览器 never 从来不关闭
     case_error: stop
     case_error_retry: 0
@@ -17,15 +17,15 @@ aiautomation:
     agent_id: 1000
     report_delay: 10
 
-#    mq_host: 10.12.1.21
-#    mq_port: 5672
-#    mq_user: admin
-#    mq_pwd: 123456
-
-    mq_host: 10.1.234.50
+    mq_host: 10.12.1.21
     mq_port: 5672
     mq_user: admin
-    mq_pwd: admin123
+    mq_pwd: 123456
+
+#    mq_host: 10.1.234.50
+#    mq_port: 5672
+#    mq_user: admin
+#    mq_pwd: admin123
 
     db_host: 10.12.1.23
     db_port: 3306
